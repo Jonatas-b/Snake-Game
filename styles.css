@@ -97,3 +97,23 @@ button {
 button:hover {
     background-color: #27ae60;
 }
+
+/* Rodapé */
+.footer {
+    margin-top: 30px;
+    text-align: center;
+    color: #aaa;
+    font-size: 15px;
+    font-family: Arial, sans-serif; /* Corrige a fonte do rodapé */
+}
+
+.footer-link {
+    color: #2ecc71;
+    text-decoration: underline;
+    transition: color 0.2s;
+    font-family: inherit; /* Garante que o link use a mesma fonte do footer */
+}
+
+.footer-link:hover {
+    color: #27ae60;
+}
