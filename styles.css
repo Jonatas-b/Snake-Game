@@ -178,3 +178,44 @@ button:hover, button:focus {
 #restart-button:hover {
     background: #27ae60;
 }
+
+/* Responsividade para telas menores */
+@media (max-width: 500px) {
+    h1 {
+        font-size: 32px;
+    }
+    #score-board {
+        font-size: 14px;
+        width: 95vw;
+        min-width: 0;
+    }
+    #game-board {
+        width: 95vw;
+        height: 95vw;
+        min-width: 0;
+        min-height: 0;
+        max-width: 98vw;
+        max-height: 98vw;
+    }
+    button {
+        font-size: 13px;
+        padding: 8px 10px;
+    }
+    .footer {
+        font-size: 12px;
+    }
+}
+
+/* Para telas muito pequenas */
+@media (max-width: 350px) {
+    h1 {
+        font-size: 22px;
+    }
+    #score-board {
+        font-size: 10px;
+    }
+    button {
+        font-size: 10px;
+        padding: 6px 6px;
+    }
+}
