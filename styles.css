@@ -52,7 +52,13 @@ h1 {
     position: relative;
     box-shadow: 0 0 20px #2ecc71;
     border-radius: 10px;
-    margin-bottom: 40px; /* Adicione esta linha */
+    margin-bottom: 40px;
+
+    /* Grade em células de 20px */
+    background-image:
+        linear-gradient(to right, #2ecc7133 1px, transparent 1px),
+        linear-gradient(to bottom, #2ecc7133 1px, transparent 1px);
+    background-size: 20px 20px;
 }
 
 /* Cobra */
@@ -181,9 +187,6 @@ button:hover, button:focus {
 
 /* Responsividade para telas menores */
 @media (max-width: 500px) {
-    h1 {
-        font-size: 32px;
-    }
     #score-board {
         font-size: 14px;
         width: 95vw;
@@ -208,9 +211,6 @@ button:hover, button:focus {
 
 /* Para telas muito pequenas */
 @media (max-width: 350px) {
-    h1 {
-        font-size: 22px;
-    }
     #score-board {
         font-size: 10px;
     }
