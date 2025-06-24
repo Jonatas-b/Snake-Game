@@ -18,10 +18,19 @@
   <div id="game-board"></div>
 
   <div id="controls">
-    <button id="start-button">Começar</button>
-    <button id="pause-button">Pausar</button>
+    <!--<button id="start-button">Começar</button>-->
+    <!--<button id="pause-button">Pausar</button> -->
     <button id="reset-button">Reiniciar</button>
     <button id="delete-high-score-button">Deletar Recorde</button>
+  </div>
+
+  <div id="game-over-modal" class="game-over-modal" style="display:none;">
+    <div class="game-over-content">
+      <h2>Game Over</h2> <!-- Este texto será trocado via JS -->
+      <p>Placar: <span id="final-score">0</span></p>
+      <p>Recorde: <span id="final-high-score">0</span></p>
+      <button id="restart-button">Jogar Novamente</button>
+    </div>
   </div>
 
   <footer class="footer">

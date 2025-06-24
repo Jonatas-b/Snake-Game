@@ -21,7 +21,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    /* height: 100vh; */ /* Remova ou comente esta linha */
     margin: 0;
 }
 
@@ -52,6 +52,7 @@ h1 {
     position: relative;
     box-shadow: 0 0 20px #2ecc71;
     border-radius: 10px;
+    margin-bottom: 40px; /* Adicione esta linha */
 }
 
 /* Cobra */
@@ -92,28 +93,88 @@ button {
     margin: 5px;
     border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.2s ease;
+    transition: 
+        background-color 0.2s,
+        box-shadow 0.2s,
+        color 0.2s;
+    box-shadow: 0 0 8px #2ecc71, 0 0 16px #2ecc7144;
+    outline: none;
+    position: relative;
+    z-index: 1;
 }
-button:hover {
+button:hover, button:focus {
     background-color: #27ae60;
+    color: #fff;
+    box-shadow:
+        0 0 16px #2ecc71,
+        0 0 32px #2ecc7188,
+        0 0 48px #2ecc7144;
+    text-shadow: 0 0 8px #2ecc71, 0 0 16px #2ecc71;
 }
 
 /* Rodapé */
 .footer {
-    margin-top: 30px;
+    margin-top: 0; /* Removido o espaçamento extra */
     text-align: center;
     color: #aaa;
     font-size: 15px;
-    font-family: Arial, sans-serif; /* Corrige a fonte do rodapé */
+    font-family: Arial, sans-serif;
 }
 
 .footer-link {
     color: #2ecc71;
-    text-decoration: underline;
+    text-decoration: none; /* Remove o sublinhado */
     transition: color 0.2s;
     font-family: inherit; /* Garante que o link use a mesma fonte do footer */
 }
 
 .footer-link:hover {
     color: #27ae60;
+     text-decoration: underline; /* Sublinhado só no hover */
+}
+
+/* Tela de Game Over */
+.game-over-modal {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.game-over-content {
+    background: #222c;
+    padding: 32px 24px;
+    border-radius: 12px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 0 24px #2ecc71;
+}
+
+.game-over-content h2 {
+    color: #ff4d4d;
+    margin-bottom: 16px;
+}
+
+.game-over-content.victory h2 {
+    color: #2ecc71;
+    text-shadow: 0 0 10px #2ecc71;
+}
+
+#restart-button {
+    margin-top: 18px;
+    background: #2ecc71;
+    color: #fff;
+    border: none;
+    padding: 10px 28px;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+#restart-button:hover {
+    background: #27ae60;
 }
