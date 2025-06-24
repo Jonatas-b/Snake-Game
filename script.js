@@ -129,6 +129,18 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    const gameBoard = document.getElementById('game-board');
+
+    gameBoard.addEventListener('touchstart', function(e) {
+        e.preventDefault();
+        // ... seu código de início de swipe (se houver) ...
+    }, { passive: false });
+
+    gameBoard.addEventListener('touchend', function(e) {
+        e.preventDefault();
+        // ... seu código de swipe ...
+    }, { passive: false });
+
     function updateLevel() {
         if (score % 10 === 0) {
             level++;
