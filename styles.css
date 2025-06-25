@@ -191,7 +191,7 @@ button:hover, button:focus {
         font-size: 14px;
         width: 95vw;
         min-width: 0;
-    }
+    }/*
     #game-board {
         width: 95vw;
         height: 95vw;
@@ -199,7 +199,7 @@ button:hover, button:focus {
         min-height: 0;
         max-width: 98vw;
         max-height: 98vw;
-    }
+    }*/
     button {
         font-size: 13px;
         padding: 8px 10px;
