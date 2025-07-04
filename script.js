@@ -66,21 +66,16 @@ document.addEventListener('DOMContentLoaded', () => {
             eatSound.play();
             score++;
             scoreElement.textContent = score;
-            placeFood();
-            updateLevel();
-        } else {
-            snake.pop();
-        }
-
-        if (head.x < 0 || head.x >= boardSize || head.y < 0 || head.y >= boardSize || snakeCollision(head)) {
-            clearInterval(gameInterval);
+            // Atualiza o high score imediatamente se necessário
             if (score > highScore) {
                 highScore = score;
                 localStorage.setItem('highScore', highScore);
                 highScoreElement.textContent = highScore;
             }
-            alert('Game Over');
-            resetGame();
+            placeFood();
+            updateLevel();
+        } else {
+            snake.pop();
         }
 
         if (snake.length === cells * cells) {
@@ -115,7 +110,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (direction.y === 0) nextDirection = { x: 0, y: 1 };
                 break;
             case 'ArrowLeft':
-                if (direction.x === 0) nextDirection = { x: -1, y: 0 };
+                if (direction.x === 0) nextDirection = { x: -1, y: 0 }; 
                 break;
             case 'ArrowRight':
                 if (direction.x === 0) nextDirection = { x: 1, y: 0 };
