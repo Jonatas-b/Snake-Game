@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let nextDirection = { x: 0, y: 0 };
     let gameInterval;
     let score = 0;
-    let highScore = localStorage.getItem('highScore') || 0;
+    let highScore = Number(localStorage.getItem('highScore')) || 0;
     let speed = 200;
     let level = 1;
     let isPaused = false;
