@@ -72,6 +72,17 @@ document.addEventListener('DOMContentLoaded', () => {
             snake.pop();
         }
 
+        if (head.x < 0 || head.x >= boardSize || head.y < 0 || head.y >= boardSize || snakeCollision(head)) {
+            clearInterval(gameInterval);
+            if (score > highScore) {
+                highScore = score;
+                localStorage.setItem('highScore', highScore);
+                highScoreElement.textContent = highScore;
+            }
+            alert('Game Over');
+            resetGame();
+        }
+
         if (snake.length === cells * cells) {
             clearInterval(gameInterval);
             showVictoryModal();
