@@ -13,7 +13,7 @@
 ---
 
 <p align="center">
-  <img alt="Demonstração do projeto" src="Projetos para README/Snake Game" width="100%">
+  <img alt="Demonstração do projeto" src="Projetos para README/Snake Game.png" width="100%">
 </p>
 
 ## 🚀 Tecnologias
