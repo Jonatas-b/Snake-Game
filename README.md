@@ -1,38 +1,41 @@
-<h1 align="center"> Jônatas Batista | Snake Game </h1>
+<h1 align="center"> Snake Game | Jogo da Cobrinha </h1>
 
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#memo-licença">Licença</a>
+  <a href="#-sobre-o-projeto">Sobre o Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-licença">Licença</a>
 </p>
 
 <p align="center">
-  <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=49AA26&labelColor=000000">
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-49AA26?style=flat-square&labelColor=000000">
 </p>
 
-<br>
+---
 
 <p align="center">
-  <img alt="projeto Snake Game" src="./projetos/SnakeGame.png" width="100%">
+  <img alt="Demonstração do projeto" src="Projetos para README/Snake Game" width="100%">
 </p>
 
 ## 🚀 Tecnologias
 
-Esse projeto foi desenvolvido com as seguintes tecnologias:
+Esse projeto foi construído com:
 
-- HTML e CSS
-- JavaScript
+- *HTML5*  
+- *CSS3*  
+- *JavaScript*
 
-## 💻 Projeto
+## 📌 Sobre o Projeto
 
-Jogo da cobrinha clássico, implementado com HTML, CSS e JavaScript. Controle simples, responsivo, com sistema de colisão e pontuação dinâmica. Perfeito para treinar lógica de programação e manipulação do DOM.
+Versão web do clássico **jogo da cobrinha**, recriada para navegador. O jogador controla a cobra em tempo real, desafiando-se a alcançar a maior pontuação possível enquanto lida com a mecânica divertida e viciante que marcou gerações.  
 
-- [Acesse o projeto](https://jonatas-b.github.io/Snake-Game/)
-
-## :memo: Licença
-
-Esse projeto está sob a licença MIT.
+👉 [Acesse o projeto aqui](https://jonatas-b.github.io/Snake-Game/)  
 
 ---
 
-© 2025 Jônatas Emanuel Batista
+## 📜 Licença
+
+Este projeto está sob a licença *MIT*.  
+
+---
+
+<p align="center"><strong>© 2025 Jônatas Emanuel Batista</strong></p>
